@@ -17,7 +17,7 @@ icon = pygame.image.load('bacteria.png')
 pygame.display.set_icon(icon)
 
 # Player 1 (Green)
-player1Img = pygame.image.load('takla.png')
+player1Img = pygame.image.load('p1.png')
 player1X = 370
 player1Y = 480
 player1X_change = 0
