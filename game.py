@@ -12,7 +12,7 @@ screen = pygame.display.set_mode((800, 600))
 background = pygame.image.load('back1.jpg')
 
 # Caption and Icon
-pygame.display.set_caption("Covid Killer - 2 Player")
+pygame.display.set_caption("Covid Fighter - 2 Player")
 icon = pygame.image.load('bacteria.png')
 pygame.display.set_icon(icon)
 
@@ -66,7 +66,7 @@ small_font = pygame.font.Font('freesansbold.ttf', 32)
 def game_over_screen(winner):
     screen.fill((0, 0, 0))  # Fill the screen with black
     if winner == 1:
-        game_over_text = over_font.render("Swordmaster Wins", True, (0, 255, 0))
+        game_over_text = over_font.render("Erio_chan Wins", True, (0, 255, 0))
     else:
         game_over_text = over_font.render("Raito_san Wins", True, (255, 0, 0))
     
@@ -128,7 +128,7 @@ game_started = False
 # Main Menu
 def main_menu():
     screen.fill((0, 0, 0))  # Fill the screen with black
-    menu_text = over_font.render("Covid Killer", True, (255, 255, 255))
+    menu_text = over_font.render("Covid Fighter", True, (255, 255, 255))
     screen.blit(menu_text, (200, 250))
     start_button = create_button("Start", 150, 350, 200, 50)
     quit_button = create_button("Quit", 450, 350, 200, 50)
